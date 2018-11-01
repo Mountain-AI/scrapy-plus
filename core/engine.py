@@ -10,6 +10,7 @@ from .spider import Spider
 from scrapy_plus.http.request import Request  # 导入Request对象
 from scrapy_plus.utils.log import logger
 
+
 class Engine:
     """
     引擎组件:对外提供程序入口;依次调用其他组件接口
@@ -28,8 +29,12 @@ class Engine:
         """
         启动整个引擎
         """
-        start_time = datetime.now()
+        start = datetime.now()  # 起始时间
+        logger.info("开始运行时间：%s" % start)  # 使用日志记录起始运行时间
         self._start_engine()
+        stop = datetime.now()  # 结束时间
+        logger.info("开始运行时间：%s" % stop)  # 使用日志记录结束运行时间
+        logger.info("耗时：%.2f" % (stop - start).total_seconds())  # 使用日志记录运行耗时
 
     def _start_engine(self):
         """
