@@ -1,6 +1,6 @@
 # coding=utf-8
 
-# scrapy_plus/core/downloader.py
+# 爬虫框架/core/downloader.py
 '''下载器组件'''
 import requests
 from scrapy_plus.http.response import Response

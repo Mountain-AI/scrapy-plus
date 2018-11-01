@@ -1,5 +1,5 @@
 # coding=utf-8
-# scrapy_plus/core/pipeline.py
+# 爬虫框架/core/pipeline.py
 """管道组件封装"""
 
 

@@ -1,5 +1,5 @@
 # coding=utf-8
-# scrapy_plus/core/scheduler.py
+# 爬虫框架/core/scheduler.py
 """调度器模块封装"""
 
 # 利用six模块实现py2与py3的兼容

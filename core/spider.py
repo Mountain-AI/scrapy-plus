@@ -1,6 +1,6 @@
 # coding=utf-8
 
-# scrapy_plus/core/spider.py
+# 爬虫框架/core/spider.py
 """爬虫组件封装"""
 from scrapy_plus.item import Item
 from scrapy_plus.http.request import Request
